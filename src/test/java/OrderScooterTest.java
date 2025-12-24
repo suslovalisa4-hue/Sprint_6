@@ -27,7 +27,7 @@ public class OrderScooterTest {
         orderPage.closeCookieBanner();
     }
 
-    @ParameterizedTest(name = "Заказ через верхнюю кнопку: {0} {1}")
+    @ParameterizedTest(name = "Заказ через верхнюю кнопку")
     @CsvSource({
             "Иван,Петров, Москва, 3, +79159437196, черный, 16.12.2025, 7, Позвоните за 30 минут",
             "Роман, Максимов, Москва, 15, +79107961232, серый, 18.10.2025, 5, ''"
@@ -42,7 +42,7 @@ public class OrderScooterTest {
         assertTrue(orderPage.successfullyText());
     }
 
-    @ParameterizedTest(name = "Заказ через нижнюю кнопку: {0} {1}")
+    @ParameterizedTest(name = "Заказ через нижнюю кнопку:")
     @CsvSource({
             "Петя, Иванов, Москва, 5, +79155834567, черный, 16.12.2025, 2, Не звонить",
             "Сергей, Сидоров, Москва, 8, +79031112233, серый, 18.12.2025, 4, ''"
